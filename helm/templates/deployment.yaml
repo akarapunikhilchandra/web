@@ -30,7 +30,7 @@ spec:
             path: nginx.conf
       containers:
       - name: web
-        image: "akarapunikhilchandra/web:{{  .Values.deployment.imageVersion  }}"
+        image: "akarapunikhilchandra/web:{{ .Values.deployment.imageVersion }}"
         resources:
           requests:
             cpu: "50m"
